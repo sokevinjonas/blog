@@ -1,3 +1,4 @@
+
 import { CommonModule } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA, Component, Input, OnInit } from '@angular/core';
 import { IonicSlides } from '@ionic/angular';
