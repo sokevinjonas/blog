@@ -1,0 +1,7 @@
+<div *ngIf="slides.length > 0">
+  <swiper-container [modules]="swiperModules">
+    <swiper-slide *ngFor="let slide of slides">
+      <img [src]="slide?.banner" alt="">
+    </swiper-slide>
+  </swiper-container>
+</div>
