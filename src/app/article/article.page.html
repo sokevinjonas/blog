@@ -1,13 +1,20 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>article</ion-title>
+    <ion-title>Detail article</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">article</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <img [src]="globalService.selectArticle.image" alt="">
+      <ion-card-title>{{ globalService.selectArticle.title }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ globalService.selectArticle.description }}</p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
